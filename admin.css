@@ -1,0 +1,425 @@
+
+body {
+    direction: rtl;
+  
+  }
+
+button:hover {
+    scale: 1.17;
+    transition: 0.3s;
+  }
+
+.Admin-Header {
+    display: flex;
+    height: 60px;
+    position: relative;
+  
+    .Side-Bar {
+      width: 0%;
+      color: black;
+      height: 100vh;
+      background: white;
+      transition: 0.3s;
+      position: fixed;
+  
+      .Head-Txt {
+        display: none;
+  
+      }
+  
+      .Content {
+        display: none;
+  
+        & ul {
+          list-style: none;
+          height: 88vh;
+          padding: 0;
+  
+          & li {
+            text-align: center;
+            display: flex;
+            outline: 0;
+            cursor: pointer;
+            padding: 5px 16px;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 20px;
+            vertical-align: middle;
+            border: 1px solid;
+            border-radius: 6px;
+            color: #24292e;
+            background-color: #fafbfc;
+            border-color: #1b1f2326;
+            box-shadow: rgba(27, 31, 35, 0.04) 0px 1px 0px 0px, rgba(255, 255, 255, 0.25) 0px 1px 0px 0px inset;
+            transition: 0.2s cubic-bezier(0.3, 0, 0.5, 1);
+            transition-property: color, background-color, border-color;
+            justify-content: center;
+            padding: 23px;
+            margin: 10px 5px;
+          }
+        }
+      }
+    }
+  
+    .Admin-Bar {
+      background: white;
+      text-align: center;
+      color: white;
+      padding: 10px;
+      box-shadow: rgba(0, 0, 0, 0.176) 0px 16px 48px 0px;
+      display: flex;
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+  
+      & h6 {
+        color: black;
+        margin: 0;
+      }
+  
+      & span {
+        color: #DD9E30;
+        font-weight: bold;
+      }
+  
+      & i {
+        color: #DB9E30;
+        cursor: pointer;
+        font-size: 25px;
+      }
+    }
+  }
+  
+  @media (max-width: 400px) {
+    .Admin-Header {
+      .Side-Bar {
+        .Head-Txt {
+          display: flex !important;
+          gap: 10px;
+          align-items: center;
+          justify-content: space-between;
+  
+          & h3 {
+            margin: 0;
+          }
+  
+          .Close-Side {
+            display: block;
+            font-size: 30px;
+            cursor: pointer;
+            margin-left: 12px;
+          }
+        }
+      }
+    }
+  
+  }
+  
+  .None {
+    display: none;
+  }
+  .Body-Admin {
+    margin: 15px 0;
+  
+    .Content {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      & input {
+        padding: 15px;
+        margin: 16px;
+        width: 46%;
+      }
+    }
+  
+    .Sender {
+      text-align: center;
+      padding: 10px;
+  
+      & button {
+        padding: 10px 45px;
+        border: none;
+        border-radius: 6px;
+      }
+    }
+  }
+  
+  
+  .ShowSide {
+    font-family: El Messiri;
+    width: 25% !important;
+    height: 100vh;
+    z-index: 100;
+    color: black;
+    height: 100vh;
+    background: white;
+    transition: 0.3s;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+  
+    .Head-Txt {
+      display: block !important;
+  
+      & h3 {
+        text-align: center;
+        padding: 20px;
+        color: black;
+      }
+  
+      .Close-Side {
+        display: none;
+      }
+    }
+  
+    .Content {
+  
+  
+      display: flex !important;
+      flex-direction: column;
+  
+      & ul {
+  
+        list-style: none;
+        height: 88vh;
+        padding: 0;
+  
+        & li {
+          text-align: center;
+          display: flex;
+          outline: 0;
+          cursor: pointer;
+          padding: 5px 16px;
+          font-size: 14px;
+          font-weight: 500;
+          line-height: 20px;
+          vertical-align: middle;
+          border: 1px solid;
+          border-radius: 6px;
+          color: #24292e;
+          background-color: #fafbfc;
+          border-color: #1b1f2326;
+          box-shadow: rgba(27, 31, 35, 0.04) 0px 1px 0px 0px, rgba(255, 255, 255, 0.25) 0px 1px 0px 0px inset;
+          transition: 0.2s cubic-bezier(0.3, 0, 0.5, 1);
+          transition-property: color, background-color, border-color;
+  
+          justify-content: center;
+          padding: 23px;
+          margin: 10px 5px;
+        }
+      }
+    }
+  
+  
+  }
+  
+  @media (max-width: 400px) {
+    .ShowSide {
+      width: 100% !important;
+    }
+  }
+  
+  
+  
+  
+  
+  
+  
+  .Admin-Section {
+    font-family: El Messiri;
+  
+    .Head-Txt {
+      text-align: center;
+    }
+  
+    .Cards {
+      display: flex;
+      padding: 20px 52px;
+      gap: 20px;
+      flex-wrap: wrap;
+  
+      .Card {
+        padding: 12px;
+        width: 31%;
+        box-shadow: rgba(0, 0, 0, 0.176) 0px 16px 48px 0px;
+        background-color: white;
+        border-radius: 12px;
+  
+        .Box-Img {
+          width: 100%;
+  
+          & img {
+            width: 100%;
+            border-radius: 25px;
+          }
+        }
+  
+        & a {
+          text-decoration: none;
+  
+          & h3 {
+            font-size: 20px;
+            color: black;
+          }
+        }
+  
+        .End-Txt {
+          display: flex;
+          justify-content: space-between;
+  
+          & button:first-child {
+            display: inline-block;
+            outline: none;
+            cursor: pointer;
+            font-size: 16px;
+            line-height: 20px;
+            font-weight: 600;
+            border-radius: 8px;
+            padding: 14px 24px;
+            border: none;
+            transition: box-shadow 0.2s ease 0s, transform 0.1s ease 0s;
+            background: linear-gradient(to right, rgb(230, 30, 77) 0%, rgb(227, 28, 95) 50%, rgb(215, 4, 102) 100%);
+            color: #fff;
+            transition: all 150ms ease-in-out 0s;
+  
+          }
+  
+          & button:last-child {
+            display: inline-block;
+            outline: 0;
+            appearance: none;
+            padding: 0px 19px;
+            border: 0px solid transparent;
+            border-radius: 4px;
+            text-decoration: none;
+            cursor: pointer;
+            background-color: rgb(9, 128, 76);
+            box-shadow: rgb(19 170 82 / 40%) 0px 2px 3px;
+            color: rgb(255, 255, 255);
+            font-size: 14px;
+            font-weight: 400;
+            height: 47px;
+            transition: all 150ms ease-in-out 0s;
+          }
+        }
+      }
+    }
+  
+  
+  }
+  
+  @media (max-width: 710px) {
+    .Admin-Section {
+      .Cards {
+        .Card {
+          width: 45%;
+        }
+      }
+    }
+  }
+  
+  @media (max-width: 510px) {
+    .Admin-Section {
+      .Cards {
+        .Card {
+          width: 100%;
+        }
+      }
+    }
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  @media screen and (max-width: 600px) {
+    table {
+      border: 0;
+    }
+    table thead {
+      display: none;
+    }
+    table, table tbody, table tr, table td {
+      display: block;
+      width: 100%;
+    }
+    table tr {
+      margin-bottom: 15px;
+    }
+    table td {
+      text-align: right;
+      padding-left: 50%;
+      position: relative;
+    }
+    table td::before {
+      content: attr(data-label);
+      position: absolute;
+      left: 0;
+      width: 50%;
+      padding-left: 15px;
+      font-weight: bold;
+    }
+  }
+  .Head-Txt-Email {
+  
+    margin: 20px 10px;
+  }
+
+
+  .Login {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f1f1f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    .login-container {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      max-width: 400px;
+      width: 100%;
+      & h2 {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      & input[type="text"],input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+      }
+      & input[type="submit"] {
+        width: 100%;
+        padding: 10px;
+        border-radius: 5px;
+        border: none;
+        background-color: #4CAF50;
+        color: white;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+      & input[type="submit"]:hover {
+        background-color: #45a049;
+      }
+    }
+
+@media screen and (max-width: 480px) {
+  .login-container {
+      width: 90%;
+  }
+}
+}
+
