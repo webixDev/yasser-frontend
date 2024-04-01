@@ -50,7 +50,7 @@ const Header = ()=> {
         <div className="Box-Icon">
         <i className="fa-solid fa-mosque fa-bounce"></i>
         <button onClick={() => switchLanguage(i18n.language === 'en' ? 'ar' : 'en')}>
-        {i18n.language === 'ar' ? 'to English' : 'تغيير للعربية'}
+        {i18n.language === 'ar' ? 'En' : 'العربية'}
       </button>
         <div onClick={()=> {setmenu(!menu)}} className="menu">
         <i className="fa-solid fa-bars"></i>
