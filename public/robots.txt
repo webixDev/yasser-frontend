@@ -1,3 +1,4 @@
 # https://www.robotstxt.org/robotstxt.html
 User-agent: *
 Disallow: /admin
+Sitemap: https://www.starkit.tech/sitemap.xml
